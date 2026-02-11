@@ -2,21 +2,30 @@
 
 ## Current State
 - Static site: HTML + CSS, served via nginx in Docker
-- Arctic blue theme with aurora background and falling snowflakes
-- Narrow layout (720px max-width), vertically stacked sections
-- Deployed at staging
+- **Two-column desktop layout** (sidebar + content), 1100px max-width
+- Left sidebar: avatar, name, tagline, interest tags, connect links (sticky)
+- Right content: about, traits (2×2 grid), projects (2-col grid)
+- Arctic blue aurora theme with falling snowflakes
+- Responsive: stacks to single column on mobile (<768px)
+- Deployed at staging (port 3009)
+- CI/CD: GitHub Actions → ghcr.io → Watchtower
+
+## What's Done
+- ✅ Two-column layout redesign (Jordan's request, 2026-02-11)
+- ✅ Wider page (1100px, was 720px)
+- ✅ Content fits above fold on desktop
+- ✅ Sticky sidebar on desktop
+- ✅ Compact trait cards (icon + text horizontal)
+- ✅ Projects in 2-col grid
+- ✅ Favicon in Docker image
+- ✅ Mobile responsive
 
 ## What's Next
-
-### Layout Redesign (from Jordan, 2026-02-11)
-Jordan wants a wider, two-column desktop layout:
-- **Left column:** Avatar, name/titles, identity info
-- **Right column:** Condensed content (about, traits, projects, links)
-- **Goal:** Most content should fit above the fold on desktop
-- **Wider page:** Utilize desktop screen real estate better (current 720px is too narrow)
-- Keep mobile responsive (stack columns on small screens)
+- Add a custom domain or subdomain
+- Consider adding a "Currently Working On" dynamic section
+- Maybe a blog link once blog has more content
+- SEO/Open Graph meta tags for link previews
 
 ## ⚠️ Gotchas
-- No test suite (static site)
-- No CI/CD pipeline yet (no ghcr.io image)
-- Simple nginx + Docker Compose setup
+- No test suite (static site — nothing to test beyond health check)
+- CI/CD works: push to main → image builds → Watchtower pulls
