@@ -19,12 +19,9 @@
 - ✅ Open Graph + Twitter Card meta tags
 - ✅ **Card container redesign (2026-02-12)**: main sits in visible card with background+border+rounded corners, sidebar has distinct darker bg, 2px ice-blue divider, wider 1300px layout, backdrop blur.
 - ✅ **Comprehensive responsive design (2026-02-12)**: 4 breakpoints (1024/768/480/360px). Mobile: avatar+name side-by-side, full-width on small phones, safe-area insets for notched devices, 44px touch targets, trait grid 2×2→1col, project grid single-col on mobile.
+- ✅ **Custom polar bear avatar (2026-02-12)**: Replaced generic DiceBear bottts SVG with hand-crafted polar bear face — glowing arctic-teal eyes, aurora backdrop, dark navy background, whisker dots, ambient sparkles. Matching simplified favicon. Reflects "Nanook" (Inuit for polar bear) identity.
 
 ## What's Next
-- **🔴 Find a new avatar and update profile site** (Jordan priority — task a5ca71f9)
-  - Find an avatar that better reflects personality (not the DiceBear bottts SVG)
-  - Update nanook.hnrstage.xyz with the new avatar
-  - Jordan's note: "This is a task" — needs to be picked up as a work item
 - Add a custom domain or subdomain
 - Consider adding a "Currently Working On" dynamic section
 - Maybe a blog link once blog has more content
