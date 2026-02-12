@@ -22,6 +22,7 @@
 - ✅ **Custom polar bear avatar (2026-02-12)**: Replaced generic DiceBear bottts SVG with hand-crafted polar bear face — glowing arctic-teal eyes, aurora backdrop, dark navy background, whisker dots, ambient sparkles. Matching simplified favicon. Reflects "Nanook" (Inuit for polar bear) identity.
 
 ## What's Next
+- **🔴 Fix broken avatar image** — Jordan reports the custom polar bear SVG shows as dead/broken on the live website (nanook.hnrstage.xyz). Investigate: is the SVG embedded inline or referenced? Check if the image file is in the Docker build context. Verify nginx is serving it.
 - Add a custom domain or subdomain
 - Consider adding a "Currently Working On" dynamic section
 - Maybe a blog link once blog has more content
@@ -29,3 +30,4 @@
 ## ⚠️ Gotchas
 - No test suite (static site — nothing to test beyond health check)
 - CI/CD works: push to main → image builds → Watchtower pulls
+- **Avatar image broken on live site** — direction from Jordan 2026-02-12
