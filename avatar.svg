@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="45%" r="55%">
-      <stop offset="0%" stop-color="#1e3a5f"/>
-      <stop offset="70%" stop-color="#0f2035"/>
-      <stop offset="100%" stop-color="#0a1628"/>
-    </radialGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8d5e2"/>
+      <stop offset="40%" stop-color="#d0eaf2"/>
+      <stop offset="60%" stop-color="#e8f4f8"/>
+      <stop offset="75%" stop-color="#eef6f9"/>
+      <stop offset="100%" stop-color="#f0f8fb"/>
+    </linearGradient>
     <radialGradient id="face" cx="50%" cy="38%" r="65%">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#dde9f1"/>
@@ -38,13 +40,17 @@
   <!-- Background circle -->
   <circle cx="256" cy="256" r="252" fill="url(#bg)"/>
 
-  <!-- Aurora band -->
-  <ellipse cx="256" cy="140" rx="220" ry="40" fill="url(#aurora)" transform="rotate(-5,256,140)"/>
-  <ellipse cx="256" cy="160" rx="200" ry="30" fill="url(#aurora)" opacity="0.5" transform="rotate(3,256,160)"/>
+  <!-- Subtle snow horizon -->
+  <ellipse cx="256" cy="400" rx="260" ry="80" fill="#ffffff" opacity="0.4"/>
+  <ellipse cx="200" cy="420" rx="100" ry="30" fill="#ffffff" opacity="0.3"/>
+  <ellipse cx="330" cy="415" rx="80" ry="25" fill="#ffffff" opacity="0.25"/>
+
+  <!-- Distant snow-capped hills -->
+  <path d="M0 380 Q80 340 150 365 Q200 345 256 355 Q310 340 370 360 Q440 338 512 370 L512 420 Q400 390 256 400 Q120 390 0 410 Z" fill="#d8edf4" opacity="0.5"/>
 
   <!-- Border ring -->
-  <circle cx="256" cy="256" r="248" fill="none" stroke="#4ecdc4" stroke-width="2.5" opacity="0.5"/>
-  <circle cx="256" cy="256" r="252" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.2"/>
+  <circle cx="256" cy="256" r="248" fill="none" stroke="#4ecdc4" stroke-width="2.5" opacity="0.4"/>
+  <circle cx="256" cy="256" r="252" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.15"/>
 
   <!-- ===== BEAR FACE ===== -->
 
@@ -60,20 +66,20 @@
 
   <!-- ===== TINY TOP HAT ===== -->
   <!-- Hat brim — smaller, centered -->
-  <ellipse cx="256" cy="162" rx="42" ry="8" fill="#4a6670"/>
-  <ellipse cx="256" cy="162" rx="42" ry="8" fill="none" stroke="#5a7a85" stroke-width="0.8"/>
+  <ellipse cx="256" cy="162" rx="42" ry="8" fill="#0a0a12"/>
+  <ellipse cx="256" cy="162" rx="42" ry="8" fill="none" stroke="#1a1a2e" stroke-width="0.8"/>
   <!-- Brim top highlight -->
-  <ellipse cx="256" cy="161" rx="38" ry="6" fill="#567880" opacity="0.5"/>
-  <!-- Hat body — arctic grey-blue -->
-  <rect x="230" y="108" width="52" height="54" rx="4" fill="#4a6670"/>
+  <ellipse cx="256" cy="161" rx="38" ry="6" fill="#151525" opacity="0.6"/>
+  <!-- Hat body — solid black -->
+  <rect x="230" y="108" width="52" height="54" rx="4" fill="#0a0a12"/>
   <!-- Hat top -->
-  <ellipse cx="256" cy="108" rx="26" ry="7" fill="#567880"/>
+  <ellipse cx="256" cy="108" rx="26" ry="7" fill="#151525"/>
   <!-- Teal ribbon band -->
   <rect x="228" y="145" width="56" height="10" rx="2" fill="#4ecdc4"/>
   <!-- Ribbon shine -->
   <rect x="236" y="147" width="28" height="3" rx="1.5" fill="#7fefec" opacity="0.4"/>
   <!-- Subtle hat shine -->
-  <path d="M240 115 L241 140" stroke="#6a8a95" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+  <path d="M240 115 L241 140" stroke="#2a2a3e" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
 
   <!-- Muzzle bump -->
   <ellipse cx="256" cy="315" rx="70" ry="48" fill="#f0f5f8"/>
@@ -126,12 +132,14 @@
   <circle cx="287" cy="328" r="2.5" fill="#b8cdd8" opacity="0.5"/>
   <circle cx="297" cy="334" r="2.5" fill="#b8cdd8" opacity="0.5"/>
 
-  <!-- ===== AMBIENT SPARKLES ===== -->
-  <circle cx="95" cy="110" r="2" fill="#7fdbda" opacity="0.35"/>
-  <circle cx="420" cy="95" r="1.5" fill="#4ecdc4" opacity="0.3"/>
-  <circle cx="400" cy="390" r="2" fill="#4ecdc4" opacity="0.25"/>
-  <circle cx="85" cy="370" r="1.5" fill="#7fdbda" opacity="0.28"/>
-  <circle cx="256" cy="70" r="1.8" fill="#ffffff" opacity="0.2"/>
-  <circle cx="440" cy="240" r="1.2" fill="#7fdbda" opacity="0.22"/>
-  <circle cx="72" cy="240" r="1.5" fill="#4ecdc4" opacity="0.2"/>
+  <!-- ===== SNOWFLAKE SPARKLES ===== -->
+  <circle cx="95" cy="110" r="2.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="420" cy="95" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="400" cy="390" r="2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="85" cy="370" r="1.5" fill="#ffffff" opacity="0.55"/>
+  <circle cx="256" cy="70" r="2" fill="#ffffff" opacity="0.65"/>
+  <circle cx="440" cy="240" r="1.5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="72" cy="240" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="350" cy="60" r="1.5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="150" cy="430" r="2" fill="#ffffff" opacity="0.45"/>
 </svg>
