@@ -117,12 +117,6 @@ main {
 .sidebar {
   grid-column: 1;
   grid-row: 1;
-  position: sticky;
-  top: 0;
-  align-self: start;
-  height: fit-content;
-  max-height: calc(100vh - 4rem);
-  overflow-y: auto;
   text-align: center;
   background: rgba(10, 15, 30, 0.7);
   border-right: 2px solid rgba(56, 189, 248, 0.2);
