@@ -94,7 +94,7 @@
   <circle cx="307" cy="264" r="2" fill="#ffffff" opacity="0.45"/>
 
   <!-- ===== NOSE ===== -->
-  <ellipse cx="256" cy="315" rx="24" ry="17" fill="url(#nose-g)" rx="6"/>
+  <ellipse cx="256" cy="315" rx="24" ry="17" fill="url(#nose-g)"/>
   <!-- Nose shine -->
   <ellipse cx="250" cy="311" rx="8" ry="5" fill="#7fdbda" opacity="0.25"/>
 
