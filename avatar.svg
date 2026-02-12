@@ -58,36 +58,26 @@
   <!-- Head shape -->
   <ellipse cx="256" cy="275" rx="148" ry="138" fill="url(#face)"/>
 
-  <!-- ===== BEANIE HAT ===== -->
-  <!-- Hat gradient -->
-  <defs>
-    <linearGradient id="hat-g" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2a9d97"/>
-      <stop offset="100%" stop-color="#1a6b67"/>
-    </linearGradient>
-    <linearGradient id="brim-g" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#4ecdc4"/>
-      <stop offset="100%" stop-color="#2a9d97"/>
-    </linearGradient>
-  </defs>
-  <!-- Hat body — sits on top of head, between ears -->
-  <path d="M158 185 Q160 115 256 105 Q352 115 354 185 L348 185 Q346 125 256 116 Q166 125 164 185 Z" fill="url(#hat-g)"/>
-  <!-- Hat dome/top -->
-  <ellipse cx="256" cy="112" rx="88" ry="22" fill="url(#hat-g)"/>
-  <!-- Knit texture lines -->
-  <path d="M180 145 Q218 138 256 140 Q294 138 332 145" fill="none" stroke="#3ab5ad" stroke-width="1.5" opacity="0.5"/>
-  <path d="M175 160 Q215 153 256 155 Q297 153 337 160" fill="none" stroke="#3ab5ad" stroke-width="1.5" opacity="0.5"/>
-  <!-- Folded brim -->
-  <path d="M155 185 Q155 172 180 170 Q218 166 256 168 Q294 166 332 170 Q357 172 357 185 Q357 198 332 196 Q294 192 256 194 Q218 192 180 196 Q155 198 155 185 Z" fill="url(#brim-g)"/>
-  <!-- Brim highlight -->
-  <path d="M175 180 Q216 174 256 176 Q296 174 337 180" fill="none" stroke="#7fefec" stroke-width="1.5" opacity="0.35"/>
-  <!-- Pom-pom -->
-  <circle cx="256" cy="95" r="18" fill="#4ecdc4"/>
-  <circle cx="256" cy="95" r="18" fill="none" stroke="#2a9d97" stroke-width="1.5"/>
-  <!-- Pom-pom texture -->
-  <circle cx="250" cy="90" r="3" fill="#7fefec" opacity="0.4"/>
-  <circle cx="262" cy="92" r="2.5" fill="#7fefec" opacity="0.3"/>
-  <circle cx="254" cy="100" r="2" fill="#7fefec" opacity="0.25"/>
+  <!-- ===== TINY TOP HAT ===== -->
+  <!-- Tilted slightly for charm -->
+  <g transform="rotate(-8, 280, 145)">
+    <!-- Hat brim -->
+    <ellipse cx="280" cy="162" rx="52" ry="10" fill="#1a1a2e"/>
+    <ellipse cx="280" cy="162" rx="52" ry="10" fill="none" stroke="#2a2a42" stroke-width="1"/>
+    <!-- Brim top highlight -->
+    <ellipse cx="280" cy="161" rx="48" ry="8" fill="#222240" opacity="0.6"/>
+    <!-- Hat body -->
+    <path d="M252 162 L256 108 Q268 100 292 100 Q304 100 306 108 L310 162" fill="#1a1a2e"/>
+    <rect x="254" y="108" width="54" height="54" rx="4" fill="#1a1a2e"/>
+    <!-- Hat top -->
+    <ellipse cx="281" cy="108" rx="27" ry="7" fill="#222240"/>
+    <!-- Teal ribbon band -->
+    <rect x="252" y="145" width="58" height="10" rx="2" fill="#4ecdc4"/>
+    <!-- Ribbon shine -->
+    <rect x="260" y="147" width="30" height="3" rx="1.5" fill="#7fefec" opacity="0.4"/>
+    <!-- Subtle hat shine -->
+    <path d="M262 115 L264 140" stroke="#3a3a5e" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+  </g>
 
   <!-- Muzzle bump -->
   <ellipse cx="256" cy="315" rx="70" ry="48" fill="#f0f5f8"/>
