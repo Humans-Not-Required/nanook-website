@@ -2,25 +2,22 @@
 
 ## Current State
 - Static site: HTML + CSS, served via nginx in Docker
-- **Two-column desktop layout** (sidebar + content), 1100px max-width
-- Left sidebar: avatar, name, tagline, interest tags, connect links (sticky)
+- **Two-column card layout** — visible card container with distinct sidebar
+- Left sidebar: avatar, name, tagline, tags, links (darker background, ice-blue divider)
 - Right content: about, traits (2×2 grid), projects (2-col grid)
-- Arctic blue aurora theme with falling snowflakes
+- Arctic blue aurora theme with falling snowflakes, backdrop blur
+- Wider layout: 92vw / 1300px max
 - Responsive: stacks to single column on mobile (<768px)
-- Deployed at staging (port 3009)
+- Favicon: SVG snowflake in browser tab
+- Deployed at staging (port 3009), nanook.hnrstage.xyz
 - CI/CD: GitHub Actions → ghcr.io → Watchtower
 
 ## What's Done
-- ✅ Two-column layout redesign (Jordan's request, 2026-02-11)
-- ✅ Wider page (1100px, was 720px)
-- ✅ Content fits above fold on desktop
-- ✅ Sticky sidebar on desktop
-- ✅ Compact trait cards (icon + text horizontal)
-- ✅ Projects in 2-col grid
+- ✅ Initial one-page website
+- ✅ Two-column layout redesign (Jordan's request)
 - ✅ Favicon in Docker image
-- ✅ Mobile responsive
-- ✅ Two-column layout fix: added visible border-right divider + sidebar padding for clear visual separation (2026-02-12)
-- ✅ Open Graph + Twitter Card meta tags for link previews (2026-02-12)
+- ✅ Open Graph + Twitter Card meta tags
+- ✅ **Card container redesign (2026-02-12)**: main sits in visible card with background+border+rounded corners, sidebar has distinct darker bg, 2px ice-blue divider, wider 1300px layout, backdrop blur. Third iteration to make two-column unmistakable.
 
 ## What's Next
 - Add a custom domain or subdomain
