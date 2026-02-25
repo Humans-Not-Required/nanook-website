@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: humans-not-required/nanook-website
+  IMAGE_NAME: nanookclaw/nanook-website
 
 jobs:
   build-and-push:
